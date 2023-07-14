@@ -1,0 +1,15 @@
+/* MEDIA QUERY FOR DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1200px) {
+}
+
+/* MEDIA QUERY FOR SMALL SCREENS AND LAPTOPS */
+@media screen and (max-width: 1024px) {
+}
+
+/* MEDIA QUERY FOR iPADS, TABLETS & SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE DEVICES */
+@media screen and (max-width: 480px) {
+}
