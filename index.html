@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeping Tally!</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">Keeping Tally</h1>
+        <h2>Enter the information you need, then save the task.</h2>
+        <h2>Keep track of your progress as you work though your list!</h2>
+        <form id="task-form">
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Please Enter Task Name" />
+            </div>
+            <div class="form-group">
+                <select name="task-typ" class="select-dropdwn">
+                    <option value="" disabled section>Please pick a type of task.</option>
+                    <option value="Household">Household</option>
+                    <option value="Vehichular">Vehiclular</option>
+                    <option value="Health">Health</option>
+                    <option value="Maintenance">Maintenance</option>
+                    <option value="Relaxation">Relaxation</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn" id="save-task" type="submit">Click here to add your task</button>
+            </div>
+        </form>
+    </header>
+
+    <!-- Start sections for assigning tasks -->
+    <main class="page-content" id="page-content">
+        <!-- Tasks to do-->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks To Start</h2>
+            <ul class="task-list" id="tasks-to-start"></ul>
+        </section>
+
+        <!-- Tasks in progress-->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks In Progress</h2>
+            <ul class="task-list" id="tasks-in-progress"></ul>
+        </section>
+
+        <!-- Tasks finished -->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Task Wrapped!</h2>
+            <ul class="task-list" id="tasks-completed"></ul>
+        </section>
+    </main>
+    <footer>
+        <h2>Created by: Criste Phillips, B.S., M.S., Software Developer</h2>
+        <div>
+            <a href="./privacy-policy.html">Privacy Policy</a> <br>
+            &copy; 2023 Criste Phillips
+        </div>
+    </footer>
+</body>
+<!-- import javascript-->
+<script src="./assets/js/script.js"></script>
+
+</html>
