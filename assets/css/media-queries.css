@@ -1,0 +1,26 @@
+/* MEDIA QUERY FOR DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1200px) {
+}
+
+/* MEDIA QUERY FOR SMALL SCREENS AND LAPTOPS */
+@media screen and (max-width: 1024px) {
+    form .form-group {
+      flex: 1 100%;
+    }
+  
+    form .form-group button {
+      width: 100%;
+    }
+  
+    .task-list-wrapper {
+      flex-basis: 100%;
+    }
+  }
+
+/* MEDIA QUERY FOR iPADS, TABLETS & SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE DEVICES */
+@media screen and (max-width: 480px) {
+}
