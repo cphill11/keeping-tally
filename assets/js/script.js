@@ -5,7 +5,7 @@ let taskIdCounter = 0;
 let formEl = document.querySelector("#task-form");
 let tasksToDoEl = document.querySelector("#tasks-to-start");
 let tasksInProgressEl = document.querySelector("#tasks-in-progress");
-let tasksCompleted = document.querySelector("#tasks-completed");
+let tasksCompletedEl = document.querySelector("#tasks-completed");
 let pageContentEl = document.querySelector("#page-content");
 
 // create array to hold tasks for saving information
@@ -182,5 +182,31 @@ let taskButtonHandler = function (event) {
 
 let taskStatusChangeHandler = function (event) {
     // find task list item based on event.target's data-task-id attribute
+    let taskId = event.target.getAttribute("data-taskid");
+
+    let taskSelected = document.querySelector(
+        ".task-item[data-task-id='" + taskId +"']"
+    );
+
+    // convert values to lower case
+    let statusValue = event.target.value.toLowerCase();
+    
+    if (statusValue === "to do") {
+        tasksToDoEl.appendChild(taskSelected);
+    } else if (statusValue === "in progress") {
+        tasksInProgressEl.appendChild(taskSelected);
+    } else if (statusValue === "completed") {
+        tasksCompletedEl.appendChild(taskSelected);
+    }
+
+    // update tasks in task's array
+    for (let i = 0; i < tasks.length; i++) {
+        if (tasks[i].id === parseInt(taskId)) {
+            tasks[i].status = statusValue;
+        }
+    }
+
+    // save to localStorage
+    saveTasks();
 }
 
