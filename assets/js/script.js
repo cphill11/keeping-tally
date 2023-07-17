@@ -165,5 +165,22 @@ let completeEditTask = function (taskName, taskType, taskId) {
 };
 
 // button handler functionality
+let taskButtonHandler = function (event) {
+    // get target element from selectin event
+    let targetEl = event.target;
 
+    if (targetEl.matches(".edit-btn")) {
+        console.log("edit", targetEl);
+        let taskId = targetEl.getAttribute("data-task-id");
+        editTask(taskId);
+    } else if (targetEl.matches(".delete-btn")) {
+        console.log("delete", targetEl);
+        let taskId = targetEl.getAttribute("data-task-id");
+        deleteTask(taskId);
+    }
+};
+
+let taskStatusChangeHandler = function (event) {
+    // find task list item based on event.target's data-task-id attribute
+}
 
