@@ -137,4 +137,33 @@ let createTaskAction = function(taskId) {
     return actionContainerEl;
 };
 
+let completeEditTask = function (taskName, taskType, taskId) {
+    // find task list item associated w/ taskID value
+    let taskSelected = document.querySelector(".task-item[data-task-id='" +taskId + "']");
+
+    // set new values
+    taskSelected.querySelector("h3.task-name").textContent = taskName;
+    taskSelected.querySelector("span.task-type").textContent = taskType;
+
+    // loop through tasks array & task object w/ new content
+    for (let i = 0; i <tasks.length; i++) {
+        if (tasks[i].id === parseInt(taskId)) {
+            tasks[i].name = taskName;
+            tasks[i].type = taskType;
+        }
+    }
+    alert("Task has been updated.");
+
+    // remove data attribute from form
+    formEl.removeAttribute("data-task-id");
+
+    // update formEl button to change from "Edit Task" to "Add Task"
+    formEl.querySelector("#save-task").textContent = "Add Task";
+
+    // save to localStorage
+    saveTasks();
+};
+
+// button handler functionality
+
 
