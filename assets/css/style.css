@@ -29,8 +29,8 @@
     rgb(50, 67, 138), 
     rgb(40, 50, 138));
     color: rgb(28, 20, 74);
-    padding: 30px 25px;
-    border-bottom: 5px solid rgb(33, 17, 199);
+    padding: 25px 20px 10px 20px;
+    border-bottom: 1.5px solid rgb(33, 17, 199);
   }
   
   header p {
@@ -78,7 +78,7 @@
     rgb(29, 20, 50));
     color: rgb(28, 20, 74);
     padding: 20px;
-    border-top: 5px solid rgb(33, 17, 199);
+    border-top: 1.5px solid rgb(33, 17, 199);
   }
 
   footer h2 {
