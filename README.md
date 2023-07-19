@@ -4,7 +4,7 @@
 A website application designed to help users keep track of busy lives and tasks.
 
 ## Description
-When user enters a 'task name', selects a 'task type' and adds that task to the list, then that specific task is placed into the initial list of 'Tasks to Do'. 
+When user enters a 'task name', selects a 'task type' and adds that task to the list, then that specific task is placed into the initial list of 'Tasks to Do'.  Alternatively, 'task type' field is intuitive with the first letter (for individual selections, user must still scroll for multiple options that begin with the same letter), pressing ENTER after toggling choice will add the list item to the 'Tasks to Do' column.
 
 When user selects 'Click here to add your task' without entering information into the 2 fields (task name and task type), a drop down reminder populates, telling the user that they must fill out the task form.  To clear this, user must click 'ok'
 
@@ -29,7 +29,7 @@ https://github.com/cphill11/keeping-tally.git
 
 
 ## Image: 
-![Screenshot](public/template/assets/images/screenshot.png)
+![Screenshot](assets/images/screenshot.png)
 
 ## Contribution
 Criste Phillips.  Sticky paws off unless permitted by creator.
