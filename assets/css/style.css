@@ -10,7 +10,7 @@
   }
   
   body {
-    background: rgb(157, 172, 184);
+    background: rgb(173, 186, 194);
     color: rgb(22, 15, 63);
     margin: 0;
     padding: 0;
@@ -50,13 +50,15 @@
     flex-wrap: wrap;
   }
   
+  /* entry fields in header */
   form input {
     outline: none;
     border: none;
     padding: 12px;
     width: 100%;
     font-size: 2.2rem;
-    border: 2px solid var(--grey);
+    border: 2px solid rgb(111, 103, 189);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
     border-radius: 12px;
   }
   
@@ -75,10 +77,24 @@
     rgb(50, 67, 138), 
     rgb(29, 20, 50));
     color: rgb(28, 20, 74);
-    font-size: 2.4rem;
     padding: 20px;
     border-top: 5px solid rgb(33, 17, 199);
-  
+  }
+
+  footer h2 {
+    font-size: 2.4rem;
+    text-align: left;
+    margin: 0;
+  }
+  footer div {
+    font-size: 2.0rem;
+    text-align: right;
+    color: #7a829a;
+  }
+  footer div a {
+    font-size: 1.4rem;
+    text-align: right;
+    color: #7a829a;
   }
   
   .page-title {
@@ -113,14 +129,16 @@
     height: calc(100% - 50px);
     background: rgb(196, 196, 196);
     border-radius: 12px;
-    border: 2px solid var(--grey);
+    border: 2px solid rgb(111, 103, 189);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
   }
   
   .task-item {
-    color: var(--grey);
+    /* color: red; */
     padding: 15px 15px;
-    border: 2px solid var(--grey);
-    background: var(--tertiary);
+    background: rgb(166, 175, 223);
+    border: 2px solid rgb(111, 103, 189);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
     border-radius: 12px;
     margin-bottom: 20px;
   }
@@ -147,25 +165,31 @@
     flex: 1;
   }
   
+  /* both buttons */
   .btn {
     outline: none;
     border: none;
     display: inline-block;
     padding: 10px 15px;
-    background: var(--primary);
+    background: rgb(139, 149, 194);
     font-size: 2.2rem;
     border-radius: 12px;
     position: relative;
     top: -3px;
-    box-shadow: 0 3px var(--grey);
+    border: 2px solid rgb(111, 103, 189);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
+    border-radius: 12px;
   }
+
+ 
   
   .btn:hover {
-    box-shadow: 0 2px var(--grey);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
+    color: black;
     top: -2px;
   }
   .btn:active {
-    box-shadow: 0 0px var(--grey);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
     top: 0;
   }
   
@@ -174,7 +198,7 @@
     font-size: 1.4rem;
     padding: 5px 7px;
     margin: 3px;
-    background: var(--secondary);
+    background: rgb(125, 149, 194);
     color: #fff;
   }
   
@@ -186,13 +210,14 @@
     padding: 12px;
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    border: 2px solid var(--grey);
-    border-radius: 12px;
+    margin: 0; 
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
+    border: 2px solid rgb(111, 103, 189);
+    box-shadow: 0 0 10px rgb(136, 0, 255);
+    border-radius: 12px;
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat, repeat;
     background-position: right 0.7em top 50%, 0 0;
@@ -201,7 +226,7 @@
   
   .select-status {
     font-size: 1.4rem;
-    padding: 4px 28px 4px 4px;
+    padding: 4px 17px 4px 20px;
     width: auto;
   }
   
