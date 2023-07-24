@@ -5,6 +5,7 @@ var formEl = document.querySelector("#task-form");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
 var tasksInProgressEl = document.querySelector("#tasks-in-progress");
 var tasksCompletedEl = document.querySelector("#tasks-completed");
+var tasksBackBurnerEl = document.querySelector("#tasks-back-burner");
 var pageContentEl = document.querySelector("#page-content");
 
 // create array to hold tasks for saving information
@@ -80,6 +81,12 @@ var createTaskEl = function (taskDataObj) {
       ).selectedIndex = 2;
       tasksCompletedEl.append(listItemEl);
       break;
+    case "back burner":
+      taskActionsEl.querySelector(
+        "select[name='status-change']"
+      ).selectedIndex = 3;
+      tasksBackBurnerEl.append(listItemEl);
+      break;
     default:
       console.log("Something went wrong!");
   }
@@ -123,7 +130,7 @@ var createTaskActions = function (taskId) {
   actionContainerEl.appendChild(statusSelectEl);
 
   // create status options element
-  var statusChoices = ["To Do", "In Progress", "Completed"];
+  var statusChoices = ["To Do", "In Progress", "Completed", "Back Burner"];
 
   for (var i = 0; i < statusChoices.length; i++) {
     // create option element
@@ -199,6 +206,8 @@ var taskStatusChangeHandler = function (event) {
     tasksInProgressEl.appendChild(taskSelected);
   } else if (statusValue === "completed") {
     tasksCompletedEl.appendChild(taskSelected);
+  } else if (statusValue === "back burner") {
+    tasksBackBurnerEl.appendChild(taskSelected);
   }
 
   // update task's in tasks array

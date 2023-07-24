@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1 class="page-title">Keeping Tally</h1>
-        <p>Enter the info you need, then save the task.  Track of your progresss as you work through your list!</p>
+        <p>Enter the info you need, then save the task.  Track your progresss as you work through your list!</p>
            <form id="task-form">
             <div class="form-group">
                 <input type="text" name="task-name" placeholder="Please Enter Task Name" />
@@ -38,20 +38,26 @@
     <main class="page-content" id="page-content">
         <!-- Tasks to do-->
         <section class="task-list-wrapper">
-            <h2 class="list-title">Tasks To Do</h2>
+            <h2 class="list-title">To Do</h2>
             <ul class="task-list" id="tasks-to-do"></ul>
         </section>
 
         <!-- Tasks in progress-->
         <section class="task-list-wrapper">
-            <h2 class="list-title">Tasks In Progress</h2>
+            <h2 class="list-title">In Progress</h2>
             <ul class="task-list" id="tasks-in-progress"></ul>
         </section>
 
         <!-- Tasks finished -->
         <section class="task-list-wrapper">
-            <h2 class="list-title">Task Completed</h2>
+            <h2 class="list-title">Completed</h2>
             <ul class="task-list" id="tasks-completed"></ul>
+        </section>
+        
+        <!-- Tasks to back burner -->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Back-Burner</h2>
+            <ul class="task-list" id="tasks-back-burner"></ul>
         </section>
     </main>
     <footer>
