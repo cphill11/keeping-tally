@@ -20,6 +20,7 @@ When user toggles the drop down menu within the saved list item, user is present
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
 
 ## Website
 https://github.com/cphill11/keeping-tally.git
