@@ -1,14 +1,3 @@
-// import font awesome library
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-
-library.add(fas, far, fab)
-
-
-
 // get id est for current date & time
 var currentDate = document.getElementById("currentDate");
     // display current date & time using moment.js 
