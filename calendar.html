@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
 
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -19,12 +17,16 @@
 
 <body>
     <header>
+        <div>
         <h1>Keeping Tally</h1>
-        <p class="lead">Sort Your Day Here!</p>
+        </div>
+        <div class="lead">
+        <h2>Sort Your Day Here!</h2>
         <h3 id="currentDate" class="lead"></h3>
         <nav>
             <a href="index.html#home">Home</a>
         </nav>
+    </div>
     </header>
     <!-- Start interactive time blocks, with text areas w/in individual rows-->
     <main class="page-content" id="page-content">
@@ -36,10 +38,10 @@
                     5am
                 </div>
                 <textarea class="col-sm-10 description"></textarea>
-                <button class="col-sm-1 saveBtn">
-                    <!-- create save icon using 'font awesome'-->
-                    <i class="fas fa-save"></i>
-                </button>
+
+                <div class="form-group">
+                    <button class="col-sm-1 saveBtn" type="submit">Save</button>
+                </div>
             </div>
             <div class="row time-block" id="row-6">
                 <div class="col-sm-1 hour">
