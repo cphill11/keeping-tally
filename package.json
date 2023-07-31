@@ -2,6 +2,7 @@
   "dependencies": {
     "bootstrap": "^3.4.1",
     "cloudflare": "^2.9.1",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.0",
+    "moment": "^2.29.4"
   }
 }
