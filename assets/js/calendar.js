@@ -1,11 +1,11 @@
 // get id est for current date & time
-var currentDate = document.getElementById("currentDate");
+const currentDate = document.getElementById("currentDate");
     // display current date & time using moment.js 
     currentDate.textContent = moment().format('MMM Do YYYY, h:mm:ss a');
 
 // calendar row color functionality
 function colorChange() {
-   var hour = moment().hour();
+   let hour = moment().hour();
 
     // jquery variable used for each time-block class
     $(".time-block").each(function() {
