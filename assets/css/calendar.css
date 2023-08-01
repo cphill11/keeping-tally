@@ -28,9 +28,14 @@
     font-size: 20px;
     padding: 25px 20px 20px 20px;
     border-bottom: 1.5px solid rgb(33, 17, 199);
+    justify-content: space-between;
   }
 
+  header h1 {
+    text-align: left;
+  }
   header nav a {
+      text-align: right;
       font-size: 30px;
       font-style: italic;
       color: rgb(35, 49, 160);
