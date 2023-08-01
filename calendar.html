@@ -8,40 +8,44 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/calendar.css">
     <link rel="stylesheet" href="./assets/css/media-queries.css">
-   
+
     <title>Keeping Tally Calendar</title>
 </head>
 
 <body>
-    <header class="flex-container" >
-        <div>
-         <h1>Keeping Tally</h1>
-        <p>Sort Your Day Here:</p>
+    <header class="flex-container">
+        <div class="title">
+            <h1>Keeping Tally</h1>
+            <p>Sort Your Day Here:</p>
         </div>
-        <div>
+
+        <div class="home">
             <nav>
                 <a href="index.html#home">Home</a>
             </nav>
         </div>
+
         <div>
-        <h3 id="currentDate" class="lead"></h3>
+            <h3 id="currentDate" class="lead"></h3>
         </div>
-    </div>
+
+        </div>
     </header>
+
     <!-- Start interactive time blocks, with text areas w/in individual rows-->
     <main class="flex-container">
         <div class="row">
             <!-- set columns, time, id, description, and save option -->
             <!-- start at 5am -->
             <div class="column" id="row-5"> 5am </div>
-            <div class="description-column">
+            <div>
                 <textarea class="description"></textarea>
             </div>
 
-                <div class="button-column" >
-                    <button class="saveBtn" type="submit">Save</button>
-                </div>
+            <div class="button-column">
+                <button class="saveBtn" type="submit">Save</button>
             </div>
+        </div>
 
         </div>
 
