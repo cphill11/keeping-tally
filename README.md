@@ -20,7 +20,6 @@ When user toggles the drop down menu within the saved list item, user is present
 * HTML
 * CSS
 * JavaScript
-* Bootstrap
 * Jquery
 * Cloudflare
 * Moment.js
