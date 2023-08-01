@@ -12,14 +12,10 @@
 </head>
 
 <body>
-    <header>
+    <header class="flex-container">
+        <div>
         <h1 class="page-title">Keeping Tally</h1>
         <p>Enter the info you need, then save the task. Track your progresss as you work through your list!</p>
-        <nav>
-            <a href="calendar.html#calendar">Hourly Calendar</a>
-        </nav>
-
-
         <form id="task-form">
             <div class="form-group">
                 <input type="text" name="task-name" placeholder="Please Enter Task Name" />
@@ -37,7 +33,14 @@
             <div class="form-group">
                 <button class="btn" id="save-task" type="submit">Click here to add your task</button>
             </div>
-        </form>
+        </form>    
+    </div>
+        <div>
+        <nav>
+            <a href="calendar.html#calendar">Hourly Calendar</a>
+        </nav>
+        </div>
+        
     </header>
 
     <!-- Start sections for assigning tasks -->

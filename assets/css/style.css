@@ -21,6 +21,7 @@ body {
 }
 
 header {
+  display: flex;
   background-image: linear-gradient(
     to right,
     rgb(70, 180, 200),
