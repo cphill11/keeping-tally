@@ -47,21 +47,43 @@ header h3 {
   text-align: right;
   padding-left: 25%;
 }
-/* .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 2px 10px 2px 10px;
-  margin: 10 10 10 10;
+
+.row {
+  margin: 2% 2% 2% 2%;
+}
+
+.clock {
+  padding-right: 1.5%;
+  font-size: 15px;
+  color: rgb(35, 49, 160);
+}
+.time {
+  padding: 1% 0 0.5% 0;
+  text-align: center;
+  border: 1px solid rgb(226, 225, 244);
 }
 
 .description {
-  width: 80%;
-  padding-left: 10px;
-  padding-right: 10px;
-} */
+  padding: 2.5% 30% 2.5% 30%;
+  border: 1.5px solid rgb(33, 17, 199);
+  box-shadow: 0 0 10px rgb(136, 0, 255);
+  background-color:  rgb(216, 211, 211);
+}
 
+.saveBtn {
+  margin: 0 0 1% 2.5%;
+  font-size: 25px;
+  color: rgb(75, 84, 154);
+  background-color: rgb(211, 211, 211);
+  border-radius: 10%;
+  border: 2px solid rgb(111, 103, 189);
+  box-shadow: 0 0 10px rgb(136, 0, 255);
+}
 
+.saveBtn:hover{
+  background-color: rgb(93, 99, 143);
+  color: white;
+}
 footer {
   width: 100%;
   background-image: linear-gradient(
