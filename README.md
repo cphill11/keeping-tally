@@ -31,7 +31,7 @@ When user selects 'privacy policy' in footer, user is taken to a mock-up for a p
 * CSS
 * Flexbox
 * JavaScript
-* Jquery
+* jQuery
 * Cloudflare
 * Moment.js
 
