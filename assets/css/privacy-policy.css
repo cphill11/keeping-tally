@@ -36,7 +36,7 @@ header nav a {
   font-size: 30px;
   font-style: italic;
   color: rgb(35, 49, 160);
-}
+ }
 
 header nav a:hover {
   color: rgb(229, 220, 242);

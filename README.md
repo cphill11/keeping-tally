@@ -16,6 +16,16 @@ When user mouses over the 'delete' button, the font color changes to indicate th
 
 When user toggles the drop down menu within the saved list item, user is presented with options to select 'To Do', 'In Progress', 'Completed', or 'Back Burner'.  By Selecting an alternative to the currently selected option, the list item is shifted to the newly designated column.
 
+When user selects 'Hourly Calendar' on landing page, user is taken to the calendar page, where user is able to Take specific notes for each time slot to help organize day.
+
+When user selects 'save', task description entered by user will be saved as typed into the alloted time slot.
+
+When user selects 'home' at top of page, user is taken back to original landing page.
+
+When user selects 'privacy policy' in footer, user is taken to a mock-up for a privacy policy.
+
+
+
 ## Built With
 * HTML
 * CSS
@@ -30,6 +40,14 @@ https://github.com/cphill11/keeping-tally.git
 
 ## Image: 
 ![Screenshot](assets/images/screenshot.png)
+
+
+## Image of Calendar page:
+![Screenshot](assets/images/calendarScreenshot.png)
+
+
+## Image of Privacy Policy page:
+![Screenshot](assets/images/privacyPolicyScreenshot.png)
 
 ## Contribution
 Criste Phillips.  Sticky paws off unless permitted by creator.

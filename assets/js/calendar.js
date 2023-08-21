@@ -3,31 +3,6 @@ const currentDate = document.getElementById("currentDate");
     // display current date & time using moment.js 
     currentDate.textContent = moment().format('MMM Do YYYY, h:mm:ss a');
 
-// calendar row color functionality
-function colorChange() {
-   let hour = moment().hour();
-
-    // jquery variable used for each time-block class
-    $(".time-block").each(function() {
-        var rowHour = parseInt($(this).attr("id").split("-")[1]);
-
-        // evaluate rowHour, apply color based on past, prestent, or future class;
-        if (rowHour < hour) {
-            $(this).addClass("past");     // row will be gray
-        } else if (rowHour === hour) {
-            $(this).addClass("present");
-            $(this).removeClass("past");
-            $(this).removeClass("future");
-        } else {
-            $(this).addClass("future");
-            $(this).removeClass("past");
-            $(this).removeClass("present");
-        }
-
-    });
-}
-colorChange();
-
 // save key / value to to local Storage
 $(".saveBtn").on("click", function () {
     let saveKey = $(this).parent().attr("id");

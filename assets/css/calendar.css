@@ -54,6 +54,7 @@ header h3 {
 
 .clock {
   padding-right: 1.5%;
+  padding-left: 0.5%;
   font-size: 15px;
   color: rgb(35, 49, 160);
 }
@@ -69,6 +70,7 @@ header h3 {
   box-shadow: 0 0 10px rgb(136, 0, 255);
   background-color:  rgb(216, 211, 211);
 }
+
 
 .saveBtn {
   margin: 0 0 1% 2.5%;
